@@ -530,8 +530,8 @@ body {
 }
 .modal-button {
   position: absolute;
-  left: 85%;
-  top: 5%;
+  right: 24px;
+  top: 24px;
 
   width: 24px;
   height: 24px;
