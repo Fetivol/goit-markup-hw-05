@@ -24,9 +24,13 @@
             ><span class="logo-part">Web</span>Studio</a
           >
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link">Studio</a></li>
-            <li><a href="./portfolio.html" class="link">Portfolio</a></li>
-            <li><a href="" class="link">Contacts</a></li>
+            <li><a href="./index.html" class="link nav-link">Studio</a></li>
+            <li>
+              <a href="./portfolio.html" class="link nav-link current"
+                >Portfolio</a
+              >
+            </li>
+            <li><a href="" class="link nav-link">Contacts</a></li>
           </ul>
         </nav>
         <address>
@@ -65,11 +69,21 @@
           <ul class="list portfolio-list">
             <li class="portfolio-item">
               <a href="" class="portfolio-link"
-                ><img
-                  src="./images/portfolio_img_1.jpg"
-                  alt="Bank app interface"
-                  width="360"
-                />
+                ><div class="portfolio-link-photo">
+                  <img
+                    src="./images/portfolio_img_1.jpg"
+                    alt="Bank app interface"
+                    width="360"
+                    class="portfolio-image"
+                  />
+                  <div class="overlay">
+                    <p class="portfolio-overlay-text">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+                </div>
                 <div class="services">
                   <h2 class="title">Banking App Interface Concept</h2>
                   <p class="list-text">App</p>
