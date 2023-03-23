@@ -582,12 +582,8 @@ body {
   height: 100%;
 
   opacity: 1;
-  transform: scale(1);
-  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
-  scale: 0;
   opacity: 0;
   /* событие указателя при таком елемента не действует на классе */
   pointer-events: none;
@@ -600,11 +596,16 @@ body {
 
   width: 408px;
   height: 576px;
+  opacity: 1;
 
   background-color: var(--modal-collor);
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden .modal {
+  opacity: 0;
 }
 .modal-button {
   position: absolute;
@@ -621,8 +622,16 @@ body {
   background: var(--footer-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--accent-color);
+}
 .button-close {
   width: 8px;
   height: auto;
   fill: var(--title-text-color);
+}
+.modal-button:hover .button-close,
+.modal-button:focus .button-close {
+  fill: var(--backgroun-color);
 }
